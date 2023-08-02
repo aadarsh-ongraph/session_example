@@ -1,0 +1,10 @@
+<h1> this is home page </h1>
+<% if customer_signed_in?%>
+<p>this is <%= current_customer.name %> page </p>
+<% debugger %>
+<%end%>
+<%= link_to 'Login', '/login' %>
+<%= link_to 'Logout', '/logout', data: {"turbo-method": :delete} %>
+
+<hr>
+
